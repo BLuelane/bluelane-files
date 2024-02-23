@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome
+	/5.15.3/css/all.min.css">
+	<title>Bluelane Tours and travel</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0;box-sizing: border-box;}
+
+		.local1{display: flex;z-index: -999;}
+
+		body{
+			background-image: url(presentation2.jpg);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+			min-height: 100%;
+			z-index: 2;
+		}
+
+		.top{top: 0%;
+			z-index: 999;
+			background-color: purple;
+			width: 100%;
+			height: 30px;
+			display: flex;
+			position: fixed;
+			justify-content: space-between;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;}
+
+		.top p{
+			color: white;
+			text-decoration: none;
+			font-size: 1.2rem;
+		}
+
+		 .company-name{
+		 	margin-top: 100px;
+        	width: 100%;
+        	display: block; }
+
+        .company-name h1{
+        	color: whitesmoke;
+        	text-align: center;
+        	font-size: 3rem;}
+
+        .company-name p{
+        	font-weight: bold;
+        	font-size: 1.5rem;
+        	text-align: center;
+        	margin-top: 5px;
+        	color: whitesmoke;}
+
+        .team{display: flex;width: 100%;border-radius: 10px;margin-top: 5%;}
+        .team2{margin-top: 37%;margin-left: 0.2%;}
+        .team3{margin-top: 37%;margin-left: 0.2%;}
+
+        #bluelane{
+        padding: 10px;
+ 		text-align: left;
+ 		cursor: pointer;
+ 	
+ 		border: none;
+ 		margin-left:1%;
+ 		border-radius: 10px;
+ 		font-size:1.1rem; 
+ 		outline:none;}
+
+
+		.navigation1{
+			margin-top: 15px;
+			padding: 10px;
+			margin-left: 1%;
+			margin-right: -1%;
+			background-image: url(log9.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+			border-radius: 10px; }
+
+		.navigation1 ul{display: flex;}
+
+		.navigation1 ul li{
+			list-style: none;
+			float: left;
+		    margin-left: 10%;
+			padding: 10px;
+			text-align: center;
+			cursor: pointer;}
+
+		.navigation1 ul li a{
+			text-decoration: none;
+			font-size: 1.2rem;
+			color: blue;
+			font-weight: bold;}
+
+		.navigation1 ul li a:hover{
+			color: orange;
+			font-size: 1.2rem;}
+
+		.navigation1 .social{margin-right: -10px;}
+		.navigation2 .social{margin-right: -5px;}
+		.navigation1 .social:hover{}
+		.navigation2 .social:hover{}
+
+
+		.navigation2{
+			display: none;
+			background-color: blue;
+			border-top: 15px solid yellow;}
+
+		.navigation1 ul li:hover .navigation2{
+			position: absolute;
+			display: block;
+			width: 300px;
+			height:auto;
+			margin-left: -11px;
+			margin-top: 11px;}
+		.navigation1 ul li:hover .navigation2 ul{display: block;}
+
+		.navigation1 ul li:hover .navigation2 ul li{
+			margin-top: 30px;
+			padding:5px;
+			text-align: left;
+			margin-left:0px;
+			width:300px;
+			border-bottom: 1px solid whitesmoke;}
+
+		.navigation1 ul li:hover .navigation2 ul li a{color: white;}
+		.navigation1 ul li:hover .navigation2 ul li:last-child{border-bottom: none;}
+
+		
+		.navigation3{
+			display: none; 
+			background-color: blue; 
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			width: 350px;
+			height:600px;
+			top: -1%;
+			border-left: 15px solid yellow;
+			z-index: 5;
+			#border-bottom: 15px solid yellow;}
+		.navigation3 p{
+			font-size: 1.2rem;
+			padding: 10px;
+			text-align: left;}
+
+		.navigation2 ul li:hover .navigation3{
+			position: absolute;
+			display: block;
+			width: 350px;
+			height:auto;
+			margin-left: 200px;
+			}
+
+		.navigation2 ul li:hover .navigation3 ul{display: block;}
+
+		.navigation2 ul li:hover .navigation3 ul li{
+			margin-top: 35px;
+			margin-left: 5px;
+			color: white;
+			padding: 10px;
+			text-align: left;
+			width:auto;
+			border-bottom: 1px solid whitesmoke;
+			text-transform:;background-color: blue;}
+
+		.navigation2 ul li:hover .navigation3 ul li a{}
+		.fa-angle-right{margin-left: 50px;}
+
+         .nile{ 
+         	margin-left: 1%;
+         	margin-right: -1%;
+         	border-radius: 10px;
+         	display: flex; 
+         	width: 100%;
+         	height: 400px;
+         	margin-top:0px;
+         }
+         .informer{
+         	border-radius: 10px;
+         	background-color: cyan;
+         	height: 100%;
+         	width: 50%;
+         	margin-left:1%;
+         	margin-right: -1%;
+         	box-sizing: border-box;
+         	}
+         .informer p{padding: 30px;}
+
+         .informer2{background-color: whitesmoke;
+         	width:50%;
+         	height: auto;
+         	 border-left: 50px solid cyan;
+         	 border-bottom:400px solid transparent;}
+
+         .informer2-details{
+         	margin-top: 20px;
+         	margin-left: 15px;
+         	margin-right: -3%;
+         	border-left-radius:50%;}
+
+         .informer2-details h2{
+         	width: 100%;
+         	text-align:center;
+         	text-transform: uppercase;
+         	padding: 15px;
+         	color: purple;
+         	font-size: 1rem;}
+         .informer2-details p{font-size: 1rem;padding: 25px;text-align: left;}
+	
+		
+
+		.hotels{
+			border-radius: 10px;
+			z-index: -999;
+			display: flex; 
+			margin-left: 1%;
+			margin-right: -1%;
+			margin-top: 1%;
+			background-image: url(color3.jpg);
+			width: 100%}
+
+		.slider{
+			margin-left: 0;
+			position:relative;
+			width:500px;
+			height: 450px;
+			border-radius:10px;
+			overflow:hidden;}
+
+		.slider .slide{
+			position: absolute; 
+			width: 100%;
+			height: 100%; 
+			clip-path: circle(0% at 0 50%);}
+
+		.slider .slide.active{
+			clip-path: circle(150% at 0 50%);
+			transition: 2s;}
+
+		.slider .slide img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;}
+
+		.slider .slide .information{
+			position: absolute;
+			background-color: black;color: white;
+			margin-left: 50px;
+			margin-top: 30px;
+			width: 75%;
+			padding: 30px;
+			border-radius: 5px;
+			 opacity: 0.8;
+			 cursor: pointer;}
+		.slider .slide .information h3{text-align: center;}
+
+
+		.nav{
+			display: flex;
+			justify-content: space-between;
+			height:450px;
+			align-items: center;
+			opacity: 0}
+
+		.slider:hover .nav{opacity: 1;transition: 2s ease;}
+
+		.prevBton, .nextBton{
+			font-size: 1.5rem;
+			background-color: blue;
+			color: white;
+			cursor: pointer;
+			z-index: 99;
+			padding: 10px;}
+		.prevBton{border-top-right-radius: 3px;}
+		.prevBton{border-bottom-right-radius: 3px;}
+
+		.nextBton{border-top-left-radius: 3px;}
+		.nextBton{border-bottom-left-radius: 3px;}
+
+		.downBtn{
+			display: flex;
+			justify-content: center;
+			align-items: center;}
+		.icons{
+			z-index: 99;
+			height: 10px;
+			width: 20px;
+			border:none;
+			background-color: grey;
+			margin:0.8px;
+			transform: translateY(-50px);}
+		.downBtn .icons.active{background-color: red;}
+
+	   .travel{
+	   	    position: relative;
+			width: 450px;
+			height: 450px;
+			overflow: hidden;}
+
+		.travel img{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			 object-fit: cover;
+			 border-radius: 10px;
+			 margin-left: 5px;}
+
+		.travel .info{
+			position: absolute;
+			background-color:white;
+			opacity: .8;
+			margin-left: 30px;
+			border-radius: 10px;
+			padding: 20px;
+			margin-right: 30px;
+			margin-top: 5%;
+			width: 90%;}
+
+
+		.travel.info h3{text-align: center;color: blue;}
+
+
+		.waterFalls{
+			position: relative; 
+			background-image:url(color3.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			border-radius: 10px;margin-left: 5px;}
+		.waterFalls .FallsInfo{
+			position: absolute;
+			background-color: white; 
+			opacity: .8;
+			margin-top: 5px;
+			margin-left: 20px;
+			margin-right: 20px;
+			border-radius: 5px;padding: 20px;}
+
+		.waterFalls .FallsInfo h3{text-align: center;color: blue;}
+		.waterFalls .FallsInfo p{margin-left: 5px;}
+
+		.game{margin-left: 1%;
+			margin-right: -1%;
+			border-radius: 10px;
+			width: 100%;
+			height: auto;
+			position: relative;
+			overflow: hidden; 
+			display: flex;
+			background-image: url(color3.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;}
+
+		.game .lineImages1{
+			width:100%;
+			height: auto;
+			margin-left: 10px;}
+
+		.game .lineImages2{
+			width:100%;
+			height:auto;
+			margin-left: 10px;}
+
+		.game .lineImages3{
+			width:100%;
+			height: auto;
+			margin-left: 10px;}
+
+		.game .lineImages img{
+			width: 100%;
+			object-fit: cover;
+			border-radius: 10px;}
+
+		.game .lineImages1 .detailz{
+			background-color: yellow;
+			padding: 20px;
+			border-radius: 10px;}
+
+		.game .lineImages2 .detailz{
+			background-color: yellow;
+			padding: 20px;
+			border-radius: 10px;}
+
+		.game .lineImages3 .detailz{
+			background-color: yellow;
+			padding: 20px;
+			border-radius: 10px;}
+
+		.game .lineImages .detailz h2{
+			text-align: center;
+			color: blue;
+			text-transform: capitalize;}
+
+        .game .lineImages1 .detailz h2{
+			text-align: center;
+			color: blue;
+			text-transform: capitalize;}
+
+		.game .lineImages2 .detailz h2{
+			text-align: center;
+			color: blue;
+			text-transform: capitalize;}
+
+		.game .lineImages3 .detailz h2{
+			text-align: center;
+			color: blue;
+			text-transform: capitalize;}
+
+		.game .lineImages .detailz p{
+		 color:blue;
+		 font-weight: bold;
+		 padding: 10px;}
+
+		 .details{
+		 	border-radius: 10px;
+		 	background-color:darkgrey;
+			margin-left: 1%;
+			margin-right: -1%;
+			display: flex;
+			width: 100%;}
+
+		 .details .details1{
+			width: 100%; display: block;outline: 2px solid white;}
+
+		.details .details1 h2{ 
+			padding: 30px;
+			text-transform: capitalize;
+			font-size: 1.6rem;
+			margin-top: 50px;}
+
+		.details .details1 p{
+			padding: 10px;
+			font-size: 1.1rem;
+			text-align: left;}
+
+		.details .details2{align-items: center;}
+
+		.details .details2 h2{text-align: center;
+			margin-top: 30px;
+			text-transform: capitalize;}
+
+		.details .details2 a{
+			font-size: 1.2rem;
+			display: block;
+			margin-top: 20px; 
+			text-align: center;
+			padding: 10px;
+			text-decoration: none;}
+			
+		.details .details2 .value{
+			background-color: white;
+			width: 100%;
+			clip-path: circle(15% at 50% 95%);}
+
+		.details .details3{justify-content: center;}
+		.details .details3 h2{
+			text-align: center;
+			margin-top: 30px; 
+			text-transform: capitalize;}
+
+		.details .details3 a{
+			font-size: 1.2rem;
+			display: block;
+			margin-top: 20px; 
+			text-align: center;
+			padding: 10px;
+			text-decoration: none;}
+
+		.details .details4{justify-content: center;}
+		.details .details4 h2{
+			text-align: center;
+			margin-top: 30px;
+			text-transform: capitalize;}
+
+		.details .details4 p{
+			text-align: left;
+			margin-top: 10px;
+			padding: 30px;
+			font-size: 1.1rem;
+			color: black;
+			}
+
+		.social{}
+		.social:hover{font-size: 1.5rem; 
+			transition: 0.2s ease;}
+		.rights{padding: 10px;margin-left: 5%;}
+
+		
+		#navy{
+			background-color: whitesmoke;
+			padding: 20px;
+			outline: 5px solid whitesmoke;
+		}
+
+		.links{
+			display: inline-block;
+			position: relative;
+		}
+		.links, a{
+			text-decoration: none;
+			font-size: 1.5rem;
+			margin-left: 14%;
+			cursor: pointer;
+		}
+		.homz{display: inline-block;}
+		.fa-home{font-size: 2rem;cursor: pointer;color: red;}
+
+		span{
+		z-index: 1;
+		min-height: auto;
+	 	min-width: 220px;
+	 	cursor: pointer;
+	 	margin-top: 1px;
+	 	background-color: darkred;
+	 	display:none;
+	 	position: absolute;
+	 }
+
+		span a{
+		text-decoration: none;
+	 	color: white;
+	 	text-transform: capitalize;
+	 	display: block;
+	 	font-size: 0.9rem;
+	 	margin-left: 2px;
+	 	padding: 5px;
+	 }
+
+	 span a:hover{
+	 	background-color: red;
+	 	width: auto;
+	 	margin-left: 0px;
+	 }
+
+	#navy nav:hover span{display: block;}
+
+
+	
+	.images{}
+	.information{
+		background: #ffffff;
+		opacity: 0.8; 
+		#height: 550px;
+		width: auto;
+		height: auto;
+	}
+
+
+	.information2 p{
+		margin-left: 10px;
+		font-size: 1.2rem;
+		font-weight: bold;
+		color: darkred;text-align: center;}
+
+		
+		.one{
+			background-color:#ffffff ;opacity: 0.5;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100%;
+		}
+	    .one a{
+	    	text-decoration: none;
+	    	font-size: 1.5rem;
+	    	margin-left: 15%; 
+	    	margin-top: 2%;
+	   }
+	    .fa-envelope{color: red;}
+	    .fa-instagram{color: brown;}
+	    .fa-skype{color: lightblue;}
+	    .fa-snapchat{color: yellow;}
+
+		.two{
+			background-image: url(444.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-right:0px;
+		}
+		.two a{
+			text-decoration: none; 
+			font-size: 1.5rem;
+			margin-left: 15%;
+			margin-top: 2%;
+		}
+		
+		.fa-facebook{color: darkblue;}
+		.fa-linkedin{color: blue;}
+		.fa-twitter{color: cyan;}
+		.fa-whatsapp{color: darkgreen;}
+		.fa-phone{color: orangered;}
+
+      .last{
+      	 background-color:purple;
+         width: 100%;
+         height: 30px;
+         border-radius: 10px;
+         margin-left: 1%;
+         margin-right: -1%;}
+       .last p{
+       	color: white;
+ 	    font-size:1.2rem;
+ 	    margin-left: 5%;
+ 	    padding: 5px;}
+
+         
+       @media(max-width:600px){
+      	body{
+      		width: 100%;
+      		height: auto;
+      		background-image: url(presentation2.jpg);
+      		background-repeat:no-repeat;
+      		background-size: contain;}
+ 
+		.top{
+			background-color: purple;
+			width: 100%;
+			height: 30px;
+			margin-top: -17.5%; 
+			display: flex;
+			justify-content: space-between;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;}
+
+		.top p{
+			color: white;
+			text-decoration: none;
+			font-size: 0.5rem;
+		}
+
+        .company-name{
+        	padding: 20px;
+		 	
+        	width: 100%;
+        	display: block; }
+
+        .company-name h1{
+        	margin-top: 150px;
+        	color: whitesmoke;
+        	text-align: center;
+        	font-size: 2rem;}
+
+        .company-name p{
+        	font-weight: bold;
+        	font-size: 1.1rem;
+        	text-align: center;
+        	margin-top: 5px;
+        	color: whitesmoke;}
+
+		.navigation1{
+			margin-left: 1%;
+			margin-right: -1%;
+			border-radius: 10px;
+			background-image: url(log9.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-top: 1%;
+		    height: 100px;
+			width: 100%;}
+
+		.navigation1 ul{display: flex;}
+
+		.navigation1 ul li{
+			float: left;
+			margin-left: 3%;
+			color: black;
+			margin-top: 2%;
+			list-style: none;
+			padding: 10px;
+			width: auto;
+			text-align: center;
+			border-radius: 5px;
+			cursor: pointer;}
+
+		.navigation1 ul li a{
+			text-decoration: none;
+			font-size: 1rem;
+			color: darkblue;
+			font-weight: bold;}
+
+		.navigation1 ul li a:hover{
+			color: orange;
+			font-size: 1rem;}
+
+		.navigation1 .social{margin-right: 10px;}
+		.navigation2 .social{margin-right: 5px;}
+
+		.navigation2{
+			display: none;
+			background-color: blue;
+			border-top: 15px solid yellow;}
+
+		.navigation1 ul li:hover .navigation2{
+			position: absolute;
+			display: block;
+			width: 150px;
+			height:auto;
+			z-index: 999;
+			margin-top: 11px;}
+		.navigation1 ul li:hover .navigation2 ul{display: block;width:auto;}
+
+		.navigation1 ul li:hover .navigation2 ul li{
+			margin-top: 30px;
+			margin-left:;
+			padding: 5px;
+			text-align: left;
+			border-bottom: 0.5px solid whitesmoke;
+			#text-transform: capitalize;}
+
+		.navigation1 ul li:hover .navigation2 ul li a{color: white; font-size: 0.8rem;}
+		.navigation1 ul li:hover .navigation2 ul li:last-child{border-bottom: none;}
+
+		
+		.navigation3{
+			display: none; 
+			background-color:blue; 
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
+			height:auto;
+			top: -1%;
+			border-left: 15px solid yellow;}
+		.navigation3 p{font-size: 0.5px;}
+
+		.navigation2 ul li:hover .navigation3{
+			position: absolute;
+			display: block;
+			width: 150px;
+			height:auto;
+			margin-left: 140px;
+
+			}
+		.navigation2 u li:hover .navigation3 ul{display: block;}
+
+		.navigation2 u li:hover .navigation3 ul li{
+			margin-top: 35px;
+			margin-left: 5px;
+			color: white;
+			padding: 10px;
+			text-align: left;
+			width:auto;
+			border-bottom: 1px solid whitesmoke;
+			text-transform:;background-color: blue;}
+
+		.navigation2 ul li:hover .navigation3 ul li a{font-size: 0.5rem;}
+		.fa-angle-right{display: none;}
+
+		 .nile{ 
+		 	box-sizing: border-box;
+         	margin-left: 1%;
+         	margin-right: -1%;
+         	border-radius: 10px;
+         	display: flex; 
+         	width: 100%;
+         	height: 200px;
+         	margin-top:0px;
+         	background-color: whitesmoke;
+         }
+         .informer{
+         	border-radius: 10px;
+         	background-color: cyan;
+         	height: 200px;
+         	width: 50%;
+         	margin-left:;
+         	margin-right: -1%;
+         	}
+         .informer p{padding: 5px;font-size: 0.5rem;}
+
+         .informer2{
+         	width:50%;
+         	height:200px;
+         	 border-left: 50px solid cyan;
+         	 border-bottom:200px solid transparent;}
+
+         .informer2-details{
+         	margin-top: 10px;
+         	margin-left: 15px;
+         	margin-right: -3%;
+         	border-left-radius:50%;}
+
+         .informer2-details h2{
+         	width: 100%;
+         	background-color: whitesmoke;
+         	text-align:center;
+         	text-transform: uppercase;
+         	padding: 10px;
+         	color: purple;
+         	font-size: 1rem;}
+         .informer2-details p{
+         	font-size: 0.4rem;
+         	padding: 5px;
+         	text-align: left;}
+	
+         .local1{width: 100%;height:inherit;}
+
+         .hotels{
+         	width: 100%;
+         	display: block;
+         	align-items: center;}
+         .hotels .slider .slide .information{
+         	width: auto;
+         	align-items: center;}
+
+         .hotels .slider .slide active .information{
+         	width: 100%;
+         	margin-left: 0px;}
+         .hotels .slider .slide .information h3{font-size: 1rem;} 
+         .hotels .slider .slide .information p{font-size: 0.5rem;} 
+         .game{
+         	display: block;
+         	width: 100%;}
+         .game .lineImages1{width: 100%;}
+         .game .lineImages2{width: 100%;}
+         .game .lineImages3{width: 100%;}
+         .game .lineImages3 .detailz h2{}
+         .game .detailz{}
+
+         .game .detailz h2{
+         	text-align: center;
+         	text-transform: capitalize;
+         	padding: 5px;}
+         .game .detailz p{color: blue;font-size: 1rem;text-align: left;}
+
+         .details{
+         	margin-top:-20px;
+         	height:50px;
+         	width:100%;}
+
+         .details1{
+         	display: flex;
+         	width: 100%;
+         	margin-left: 0px;
+         	height: 200px;}
+         .details1 h2{
+         	color: red;
+         	font-size: 1rem;
+         	font-weight: bold;
+         	text-align: center;
+         	margin-top: 0px;}
+
+         .details2,.details3,.details4{display:none;}
+
+         .travel{width: 100%;}
+         .travel img{width: 100%;}
+         .travel .info{align-items: center;}
+         .waterFalls .FallsInfo{align-items: center;margin-left: 0px;}
+         .FallsInfo p{text-align: left;margin-left: 0px;}
+         #bluelane{
+         	width: 100%;
+         	border-radius: 10px;
+         	align-items: right;
+         	margin-left: 1%;}
+
+        .last{
+         display: none;
+      	 background-color:purple;
+         width: 100%;
+         height: 30px;
+         border-radius: 10px;
+         margin-left: 1%;
+         margin-right: -1%;}
+
+       .last p{
+       	text-align: center;
+       	color: white;
+ 	    font-size:1.1rem;
+ 	    #margin-left: 5%;
+ 	    padding: 5px;}
+      
+	
+      }
+    
+	</style>
+    </head>
+
+    <body>
+     	<div class="top">
+     		<p>+256704160705/702101355</p>
+     		<p>bluelane2023@gmail.com</p>
+     	</div>
+
+  <div class="navigation1">
+ <ul>
+	<li style="margin-top: 30px"><a  href="tours&travel.html">Home</a></li>
+	    <li><a href=""><i class="fa fa-user"></i>AboutUs&#x25be</a>
+		<div class="navigation2">
+		<ul>
+		<li><a href="">Our Mission<i class="fa fa-angle-right"></i></a>
+		<div class="navigation3">
+		<ul>
+		<li><a href="">
+			Our mission is to provide the best travel experience to our customers by offering them the highest quality service, comfort, and convenience.<br>
+		    We strive to exceed their expectations and make their journey as enjoyable as possible.</a></li>
+		</ul>
+		</div>
+		</li>
+		<li><a href="">Our Vision<i class="fa fa-angle-right"></i></a>
+		<div class="navigation3">
+		<ul>
+		<li><a href="">
+		Our vision is to be the leading provider of travel services in the world. We aim to achieve this by offering our customers the best possible travel experience, with a focus on quality, safety, and reliability.</a></li>
+		</ul>
+		</div>
+		</li>
+		<li><a href="">Our Values<i class="fa fa-angle-right"></i></a>
+		<div class="navigation3">
+		<ul>
+		<li><a href="">
+		We are built to certainly grow making profits,but this will only be done through realization that superiority in customer service, integrity, unchallengable professionalism, teamwork, good leadership abilities, excellence and competence are the main values and morals for a true picture of our daily efforts to best serve our clients.</a></li>
+		</ul>
+		</div>
+		</li>
+		</ul>
+		</div>
+		</li>
+		<li><a href=""><i class="fa fa-clone"></i>Services&#x25be</a>
+		<div class="navigation2">
+		<ul>
+		 <li><a href="airport.html">Airport pick-ups<i class="fa fa-angle-right"></i></a>				
+		<div class="navigation3">
+			<p style="text-align: center;
+	       background-color: red;
+	       width: 400px; 
+	       padding: 10px;
+	       text-transform: capitalize;
+	       color: white;">Airport pick-up</p>
+          <img src="website6.jpg" style="width:400px">
+          <p style="width:400px;background-color: blue; color:white;margin-left:10px; font-size: 1.2rem;border-bottom: 1px solid yellow;">For airport transportation and shuttle services Bluelane offers easy airport transfers to and from your accomodation.<br>we track your flight and adjust your pick up time according to your time of arrival.<br>Once your flight has landed your driver will be there waiting for you.<br>We are always on ground to transport you from the airport to your hotel.<br>Our prices can vary based on how far your accomation is from the airport, the type and size of the vehicle you need.<br>Alternatives to ground transfers include renting a car from our car rental services and we will charge you depending on the time you will need to have it</p>
+        </div>
+        </li>
+
+         <li><a href="tour.html">Tours and sights <i class="fa fa-angle-right"></i></a>
+        	<div class="navigation3">
+        		<p style="text-align: center;
+	       background-color: red;
+	       width: 350px; 
+	       padding: 10px;
+	       text-transform: capitalize;
+	       color: white;">Tours and sights</p>
+          <img src="tour1.jpg" style="width:350px">
+
+          <p style="width:350px;background-color: blue; color:white;margin-left:10px; font-size: 1.1rem;border-bottom: 15px solid yellow;">Have you been at kidepo national park, lake bunyonyi(for bird watching, here uganda has some of the rare birds that the world does not have, like the blue turaco, the pink flammingos, the Uganda crested crane, wood peckers and many more birds which are not found in other parts of the world. visit the hot springs, the crater lakes, mountain of the moon, visit the mabira forests, sipi falls, murchson falls and many more eye catching creatures, and maginificent places</p>
+	    
+        </div>
+        </li>
+
+
+        <li><a href="hire.html">Car-hire Services<i class="fa fa-angle-right"></i><a/>
+        <div class="navigation3">
+        <p style="text-align: center;
+	      background-color: red;
+	      width: 400px; 
+	      padding: 10px;
+	      text-transform: capitalize;
+	      color: white;">Car Rental Services</p>
+          <img src="rental1.jpg" style="width:400px;">
+           <p style="width:400px;background-color: blue;color: white; margin-left:10px; font-size: 1.2rem; border-bottom: 2px solid white;">
+	      Car hire services include self-drive, alternatively we can provide you with a driver who will help you familiarize with the locality but its upon request as we respect our clients' decisions<br>so if you feel you dont need company we will understand and dont force it up you<br>the cost will vary according to the days you have used the car.<br>
+	    <strong>safest safaris greatest experience</strong></p>
+        </div>
+        </li>
+
+	    <li><a style="margin-left: -10px;" href="ticket.html">Air Ticketing Services</a>
+	    <div class="navigation3">
+	    <p style="text-align: center;
+	      background-color: red;
+	      width: 350px; 
+	     padding: 10px;
+	      text-transform: capitalize;
+	      color: white;">Air Ticketing services</p>
+          <img src="plane2.jpg" style="width:350px;">
+          <p style="width:350px;background-color: blue;color: white; margin-left:10px; font-size: 1.1rem; border-bottom: 2px solid white;">Let us book your airticket to your destination<br>
+          verifying payment details and confirming the transaction, checking seat availability, adding the fare information, we are always in touch with the major airliners to make sure your seat is available and your travel arrangements are corfirmed,</p>
+	    		
+	    	</div>
+	    </li>
+
+	    <li><a href="hotel.html">Hotel Bookings</a>
+	    <div class="navigation3">
+	    <p style="text-align: center;
+	     background-color: red;
+	     width: 350px; 
+	     padding: 10px;
+	     text-transform: capitalize;
+	     color: white;">Hotels and Bookings</p>
+        <img src="hotel7.jpg" style="width:350px;">
+        <p style="width:350px;background-color: blue;color: white; margin-left:10px; font-size: 1.1rem; border-bottom: 2px solid white;">We provide valuable insights to help on selecting the best hotels or we do and complete the reservation for you in a hotel within a good location with all the amenities and price friendly, proximity is key to us.<br>we will transfer you to and from your hotel to your desired tour destinations.<br>lets find a proper place for you to create a home base while sightseeing or conducting business.</p>
+        </div>
+		</li>
+		</ul>
+		</div>
+		</li>
+		<li><a href=""><i class="fa fa-phone"></i>Contact&#x25be</a>
+		<div class="navigation2">
+		<ul>
+		<li><a class="social" href="https://facebook.com/bluelane tours and travel"><ion-icon name="logo-facebook"></ion-icon></a></li>
+		<li><a class="social" href="https://twitter.com/@jordanlive6"><ion-icon name="logo-twitter"></ion-icon></a></li>
+		<li><a class="social" href="https://linkedin.com/jordan matovu"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+		<li><a class="social" href="https://whatsapp.com/dl"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+		</ul>
+		</div>
+		</li>
+
+		<li><a href=""><i class="fa fa-"></i>Policy&#x25be</a></li>
+	    </ul>
+        </div>
+
+     	
+
+   <div class="company-name">
+   	<h1>Bluelane Tour and Travel</h1>
+   	<p>safest safaris greater experience</p>
+   	</div>
+
+   	
+
+    <div class="Bar">
+ 	<form action="https://bluelane.org" method="get" target="">
+ 		<label for="bluelane"></label>
+ 		<input type="search" id="bluelane"
+ 		 name="bluelane" placeholder="www.bluelane.org">
+ 	</form>
+ </div>
+
+ <div class="team">
+ 	<div class="team1">
+ 		<img src="clients1.jpg">
+ 	</div>
+ 	<div class="team2">
+ 		<img src="farming.jpg" style="width:400px">
+ 	</div>
+ 	<div class="team3">
+ 		<img src="elp.jpg" style="width:340px">
+ 	</div>
+ </div>
+ 
+
+		
+
+ <div class="nile">
+<div class="informer">
+	<h2 style="text-align:center;text-transform: uppercase;padding: 10px;">the nile</h2>
+     <p>
+     	Nile River the longest river in the world, called the fathr of African rivers. It rises south 
+     	of the Equator and flows northward through northeastern Africa to drain into the Mediterranean Sea.
+     	The Nile rises from lake victoria, the second largest fresh water body lake in the world, which has an area of more than 26,800 square miles the source of the nile is at jinja uganda.come visit the source of the nile.
+     	The river has tributaries such as the white nile, blue nile and the Victoria Nile, descending into the East African Rift valley over Murchison (Kabalega) Falls before entering the northern end of Lake Albert. Unlike Lake Victoria, Lake Albert is a deep, narrow lake with mountainous sides. <br>
+     	There the waters of the Victoria Nile unite with the lake waters, passing northward as the Albert Nile—a portion of the river. so you will not be disappointed visiting the nile river.
+		</p>
+	</div>
+
+	<div class="informer2">
+		<div class="informer2-details">
+		 <h2>Uganda and its Natural beauties</h2>
+		 <p>
+			In East Africa, Uganda is the most diverse and unique destination. Its landscapes range from high mountains and gushing waterfalls to vast savannahs and fast flowing rivers. Uganda is home to the highly endangered mountain gorillas and the fascinating chimpanzees, it’s where you can find the source of the Nile, the longest river in world, and a number of excellent game parks.<br>
+			 This is why Uganda is known around the world as the “Pearl of Africa”.<br>
+			 We are a developing country, come and visit many of its top attractions, staying at some of its most unique and beautiful Hotels, your tour will inspire others to add this amazing country to their travel wish list. Move with...bluelane tours and travel TEL +256702101355/770491917/0704160706 to these eye catching game parks and watch these wanderful animals and birds of all kind. Uganda is one of the most beautiful countries in Africa. With its dense misty forests, snow-peaked mountains, glassy lakes and sprawling savannas, it’s no wonder Winston Churchill called  this wonderful country the ‘pearl of Africa’. While mountain gorillas are the allure for many visitors, there’s an astounding variety of attractions for tourists.
+		</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div style="opacity: 10px;background-image:url(farming.jpg);">
+</div>
+
+<div style="margin-top: 0.5%;
+margin-left: 1%;
+border-radius: 10px;
+display: flex;
+position:relative;
+width: 99%;">
+
+	<div class="local1">
+	<img src="team.jpg" style="width:49%;
+	margin-left:1%;
+	margin-right: -1%;
+	#outline: 5px solid greenyellow;
+	border-top: 30px solid darkcyan;
+	border-radius: 10px;">
+
+	<img src="jordan1.jpg" style="
+	margin-left: 2%;
+	margin-right: -1%;
+	width:50%;
+	outline: 5px solid purple;
+	border-top: 30px solid purple;
+	border-radius: 10px;">	
+	</div>
+	</div>
+</div>
+	
+    <div class="hotels">
+	<div class="slider">
+	<div class="slide active">
+		<img src="apes.jpg" alt="">
+		<div class="information">
+			<h3>Gorilla trekking</h3>
+			<p>Bwindi impenetrable forest provides one of the 
+			best amazing gollira treking activities, come and feel the
+			 atmosphere in a thick forest with our professional golira trekking tour guides. </p>
+		</div>
+	</div>
+
+	<div class="slide">
+		<img src="protea4.webp" alt="" style="width:100%;">
+		<div class="information">
+			<h3>Best Hotel Rooms</h3>
+			<p>Bluelane will connect and make reservations 
+			for you with the best and price friendly hotels in the country</p>
+		</div>
+	</div>
+
+	<div class="slide">
+		<img src="pic8.jpg" alt="">
+		<div class="information">
+			<h3>River nile</h3>
+			<p>The Nile is one of the longest rivers in Africa and the world, the source of the Nile starts at lake Victoria at Jinja in Uganda and traverses through a number of countries, it has several tributaries including the Blue Nile, White Nile and others, come and see the source of River Nile in Uganda </p>
+		</div>
+	</div>
+
+	<div class="slide">
+		<img src="protea7.webp" alt="">
+		<div class="information">
+			<h3>Local cuisine</h3>
+			<p>The taste of our local cuisines will make you want a permanent residence, 
+			uganda is blessed with all kinds of foods throughout the year, 
+		    come and see what the pearl of Africa has to offer</p>
+		</div>
+	</div>
+
+		<div class="slide">
+		<img src="protea2.webp" alt="">
+		<div class="information">
+			<h3>protea hotel</h3>
+			<p>The protea is one the 7 star hotels we have here in uganda, its well situated on the top of the hill with an amazing view of the city and the surounding areas its services are impeccable and its meals are of international starndard catering for everyone, come and experience luxury at its highest but price friendly with 7 star standard service.</p>
+		</div>
+	</div>
+
+	<div class="slide">
+		<img src="rental.png" alt="">
+		<div class="information">
+			<h3>Car Rental Services</h3>
+			<p>For all your car rental Needs<br>
+				contact bluelane,our cars are well serviced
+				 and well looked after.<br>
+				our charges depend on how long you have had the vehicle </p>
+		</div>
+</div>
+
+		  
+		 <div class="nav">
+    	  <i class="fas fa-angle-left prevBton"></i>
+    	  <i class="fas fa-angle-right nextBton"></i>
+       </div>
+
+       <div class="downBtn">
+       	<div class="icons active"></div>
+       	<div class="icons"></div>
+       	<div class="icons"></div>
+       	<div class="icons"></div>
+       	<div class="icons"></div>
+       	<div class="icons"></div>
+
+       </div>
+    </div> 
+    
+    	<div class="travel">
+    	<img src="pic.jpg">
+    	<div class="info">
+    		<h3>Airport Transfers</h3>
+    		<p>Bluelane will track your flight time and
+    		 transfer you upon rival to your hotel,
+    		make your travel arrangements with us.<strong style="color: blue;"><br>bluelane Tours and Travel</strong><br><strong style="color: blue;">Tel: +256704160705/702101355<br>Email: bluelane2023@gmail.com.</strong>
+    	</p>
+    	</div>
+    </div>
+ 
+
+    <div class="waterFalls">
+    	<div class="FallsInfo">
+    		<p>www.bluelane.org</p>
+    		<p>uganda is blessed by nature,<strong>Bluelane Tours and Travel</strong> 
+    	 		will take you to visit the amazing murchsonfalls, 
+    	 	sipi falls and many other amazing natural beauties
+    	 	<br>write to us at: <strong style="color:blue;"> bluelane2023@gmail.com</strong></p>
+    	 	
+    	 	
+    	 </div>
+    	<video controls src="nile.mp4"
+    	 autoplay 
+    	 width ="100%;" 
+    	 height ="auto"></video>
+    	 
+    </div>
+</div>
+       
+<div class="game">
+	<div class="lineImages1">
+		<img src="kazinga10.jpg" style="width:100%">
+		<div class="detailz">
+			<h2>Tour guides and boat cruises</h2>
+			<p>Our guides are professionals and experienced, so many sightseeing activities with the guides are very secure because they know the terrain and what to find and how to avoid accidents.<br>
+			your adventures are always secure with us.<br> make Uganda your number one tourism destination and bluelane will be your only true tour agency. </p>
+		</div>
+	</div>
+
+	<div class="lineImages2">
+		<img src="tour.jpg" style="width:100%;">
+		<div class="detailz">
+			<h2>baby gorillas</h2>
+			<p>Come face to face with the gorillas, watch them feed and take pictures<br> Gorillas are peaceful creatures unless they sense danger, get a memorable experience in the wild with your top tour agency.<br><br> </p>
+		</div>
+	</div>
+
+	<div class="lineImages3">
+		<img src="fal.jpg" style="width:100%;height: 210px;border-radius: 10px;">
+		<div class="detailz">
+			<h2>Fascinating water fall</h2>
+			<p>Water falls are one of the hilurious activities you can't miss out, feel the cool breeze while enjoying the exhilaration of the murchson falls,sipi falls and many more amazing water falls, feel comfort on the trips while experiencing convience and quality service with us</p>
+		</div>
+	</div>
+</div>
+
+		<div class="details">
+			<div class="details1">
+				<div class="details1Info">
+				<h2>contactUs</h2>
+				<a class="social" href="https://bluelane2023/"><ion-icon name="mail-outline"></ion-icon></a>
+				<a class="social" href="https://facebook.com"><ion-icon name = "logo-facebook"></ion-icon></a>
+				<a class="social" href="https://twitter.com"><ion-icon name = "logo-twitter"></ion-icon></a>
+				<a class="social" href="https://linkedin.com"><ion-icon name= "logo-linkedin"></ion-icon></a>
+				<a class="social" href="https://youtube.com"><ion-icon name ="logo-youtube"></ion-icon></a>
+			</div>
+			</div>
+
+
+			<div class="details2">
+				<div style="width:350px">
+				<img src="present4.jpg" style="width:200px;margin-left: 25px;">
+				<h2>mission statement</h2>
+				<p style="margin-left: 25px;padding: 10px;">
+					Our mission is to provide the best travel experience to our customers by offering them the highest  quality service, comfort, and convenience. We strive to exceed their expectations and make their journey as enjoyable as possible.thats why say "safest safaris, greatest experience.
+				</p>
+			</div>
+			</div>
+
+	
+			<div class="details3">
+				<div style="width: 350px;">
+				<h2>aboutUs</h2>
+				<a href="faq.html">FAQS</a>
+				<a href="news.html">News</a>
+				<a href="clients.html">clients</a>
+				<a href="values.html">values</a>
+				<a href="team.html">our team</a>
+			</div>
+			</div>
+
+		
+			<div class="details4">
+				<div style="width:300px">
+				<h2>company policy</h2>
+				<p style="padding: 10px;">The purpose of our existance is to provide services to our clients, and for the this to be implemented we have to have rules and regulations as regards our operations, we very much put emphasis on the nortion of "customer is our boss" and we serve them with atmost care, our policy regarding refunds states that once we have processed everything regarding your trip and you dont show up, we will not refund your money as it will be considered a cost expenditure, but we promise to serve you </p>
+			</div>
+		</div>
+	</div>
+	
+   <div class="last">
+ 	<p>
+ 	All rights reserved &#169 bluelane 2023
+   </p>
+   </div>
+
+    	
+   
+<script type="text/javascript">
+	var slider = document.querySelector(".slider");
+	var imageSlider = document.querySelectorAll(".slide");
+	var downIcons = document.querySelectorAll(".icons");
+	var nextBtn = document.querySelector(".nextBton");
+	var prevBtn = document.querySelector(".prevBton");
+	var imageNumber = imageSlider.length;
+
+	var slideBucket = 0;
+
+	nextBtn.addEventListener("click", () => {
+		imageSlider.forEach((slide) => {slide.classList.remove("active");});
+		downIcons.forEach((icons) => {icons.classList.remove("active");});
+		
+		slideBucket++;
+		if(slideBucket > (imageNumber -1)) {slideBucket = 0;}
+		imageSlider[slideBucket].classList.add("active");
+		downIcons[slideBucket].classList.add("active");
+	});
+
+	prevBtn.addEventListener("click", () => {
+		imageSlider.forEach((slide) => {slide.classList.remove("active");});
+		downIcons.forEach((icons) => {icons.classList.remove("active");});
+
+	slideBucket--;
+		if(slideBucket < 0 ) {slideBucket = imageNumber -1;}
+		imageSlider[slideBucket].classList.add("active");
+		downIcons[slideBucket].classList.add("active");
+	});
+
+	
+	var playSlider;
+	var repeater = () => { playSlider = setInterval(function(){
+		imageSlider.forEach((slide) => {slide.classList.remove("active");});
+		downIcons.forEach((icons)=>{icons.classList.remove("active");});
+		
+		slideBucket++;
+		if(slideBucket > (imageNumber -1)) {slideBucket = 0;}
+		imageSlider[slideBucket].classList.add("active");
+		downIcons[slideBucket].classList.add("active");
+
+	}, 10000)};
+
+	repeater();
+	
+	slider.addEventListener("mouseover", () => {
+		clearInterval(playSlider);
+	});
+
+	slider.addEventListener("mouseout", () => {
+		repeater();
+	});
+
+	let firstBox = document.querySelectorAll(".page1");
+	let nextButton = document.querySelector(".nextButton");
+	let previousButton = document.querySelector(".previousButton");
+	let navIcon = document.querySelectorAll(".navIcon");
+	let boxImages = firstBox.length
+	let imageBox = 0;
+
+	 nextButton.addEventListener("click", () => {
+    	firstBox.forEach((page1) => {page1.classList.remove("active");});
+        navIcon.forEach((navIcon) => {navIcon.classList.remove("active");});
+
+    	imageBox++;
+    	if (imageBox > (boxImages -1)) {imageBox = 0;}
+    	firstBox[imageBox].classList.add("active");
+    	navIcon[imageBox].classList.add("active");
+    
+    });
+
+    previousButton.addEventListener("click", () => {
+
+    	firstBox.forEach((page1) => {
+    	page1.classList.remove("active"); });
+
+        navIcon.forEach((navIcon) => {
+    	navIcon.classList.remove("active");});
+    	
+    	imageBox--;
+    	if (imageBox < 0) {imageBox = boxImages -1;}
+    	firstBox[imageBox].classList.add("active");
+    	navIcon[imageBox].classList.add("active");
+    
+    });
+	
+	    
+</script>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
