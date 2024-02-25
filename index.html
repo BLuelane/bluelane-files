@@ -16,7 +16,6 @@
 			background-color: grey;
 			width: 100%;
 			min-height: 100%;
-			z-index: 2;
 		}
 
 		.top{top: 0%;
@@ -59,11 +58,18 @@
         	border-radius: 10px;
         	margin-top: 5%;}
         .team2{
-        	margin-top: 37%;
+        	margin-top: 2%;
         	margin-left: 0.2%;}
         .team3{
-        	margin-top: 37%;
+        	margin-top: 2%;
         	margin-left: 0.2%;}
+
+        .tours{
+ 		src: nile.mp4;
+    	 control:autoplay;
+    	 width:500px; 
+    	 height:500px;}
+    	 
 
         #bluelane{
         padding: 10px;
@@ -229,13 +235,12 @@
 			margin-left: 1%;
 			margin-right: -1%;
 			margin-top: 1%;
-			background-image: url(color3.jpg);
 			width: 100%}
 
-		.slider{
+		.hotels .slider{
 			margin-left: 0;
 			position:relative;
-			width:500px;
+			width:1000px;
 			height: 450px;
 			border-radius:10px;
 			overflow:hidden;}
@@ -307,7 +312,7 @@
 
 	   .travel{
 	   	    position: relative;
-			width: 450px;
+			width: 1000px;
 			height: 450px;
 			overflow: hidden;}
 
@@ -433,7 +438,9 @@
 			width: 100%;}
 
 		 .details .details1{
-			width: 100%; display: block;outline: 2px solid white;}
+			width: 100%; 
+			display: block;
+			outline: 2px solid white;}
 
 		.details .details1 h2{ 
 			padding: 30px;
@@ -615,14 +622,18 @@
  	    margin-left: 5%;
  	    padding: 5px;}
 
+
+
+
          
        @media(max-width:600px){
       	body{
-      		width: 100%;
+      		width: 600px;
       		height: auto;
       		background-image: url(presentation2.jpg);
+      		background-attachment:fixed;
       		background-repeat:no-repeat;
-      		background-size: contain;}
+      		background-size: cover;}
  
 		.top{
 			background-color: purple;
@@ -642,12 +653,12 @@
 
         .company-name{
         	padding: 20px;
-		 	
         	width: 100%;
-        	display: block; }
+        	display: block;
+        	 }
 
         .company-name h1{
-        	margin-top: 150px;
+        	margin-top: 5px;
         	color: whitesmoke;
         	text-align: center;
         	font-size: 2rem;}
@@ -661,15 +672,18 @@
 
 
         .team{
+        	background-image: url(color3.jpg);
         	display:grid;
-        	width: 100%;
+        	border: 2px solid yellow;
+        	width:600px;
         	border-radius: 10px;
         	margin-top:1%;}
-        .team2{
-        	margin-top:1%;}
-        .team3{
-        	margin-top:1%;}
+        .team .team1 img{width: 100%;}
+        .team .team2 img{width:100%;}
+        .team .team3 img{width:100%}
 
+
+  
 		.navigation1{
 			margin-left: 1%;
 			margin-right: -1%;
@@ -775,21 +789,25 @@
          	display: flex; 
          	width: 100%;
          	height: 200px;
-         	margin-top:0px;
+         	margin-top:10px;
          	background-color: whitesmoke;
          }
          .informer{
+         	margin-top: 2px;
          	border-radius: 10px;
          	background-color: cyan;
          	height: 200px;
-         	width: 50%;
+         	width: 600px;
          	margin-left:;
-         	margin-right: -1%;
          	}
-         .informer p{padding: 5px;font-size: 0.5rem;}
+         .informer p{
+         	font-size: 0.3rem;
+         	padding: 20px;
+         	}
 
          .informer2{
-         	width:50%;
+         	border-radius: 10px;
+         	width:600px;
          	height:200px;
          	 border-left: 50px solid cyan;
          	 border-bottom:200px solid transparent;}
@@ -797,28 +815,32 @@
          .informer2-details{
          	margin-top: 10px;
          	margin-left: 15px;
-         	margin-right: -3%;
          	border-left-radius:50%;}
 
          .informer2-details h2{
          	width: 100%;
-         	background-color: whitesmoke;
          	text-align:center;
          	text-transform: uppercase;
          	padding: 10px;
          	color: purple;
          	font-size: 1rem;}
+
          .informer2-details p{
-         	font-size: 0.4rem;
-         	padding: 5px;
-         	text-align: left;}
+         	font-size: 0.3rem;
+         	padding: 20px;
+         	text-align: left;margin-right: -1%}
 	
-         .local1{width: 100%;height:inherit;}
+         .local1{
+         	width: 100%;
+         	height:inherit;
+         	margin-top:10px;}
 
          .hotels{
-         	width: 100%;
          	display: block;
          	align-items: center;}
+
+         .hotels .slider{width: 100%;}
+
          .hotels .slider .slide .information{
          	width: auto;
          	align-items: center;}
@@ -847,6 +869,7 @@
          	margin-top:-20px;
          	height:50px;
          	width:100%;}
+         .details .details1Info{background-color: grey;}
 
          .details1{
          	display: flex;
@@ -862,8 +885,8 @@
 
          .details2,.details3,.details4{display:none;}
 
-         .travel{width: 100%;}
-         .travel img{width: 100%;}
+         .travel{width:600px;}
+         .travel img{width:100%;overflow: hidden;}
          .travel .info{align-items: center;}
          .waterFalls .FallsInfo{align-items: center;margin-left: 0px;}
          .FallsInfo p{text-align: left;margin-left: 0px;}
@@ -888,6 +911,11 @@
  	    font-size:1.1rem;
  	    #margin-left: 5%;
  	    padding: 5px;}
+ 	.tours{
+ 		src: nile.mp4;
+    	 control:autoplay;
+    	 width:100%; 
+    	 height:auto;}
       
 	
       }
@@ -1049,10 +1077,10 @@
  		<img src="clients1.jpg">
  	</div>
  	<div class="team2">
- 		<img src="farming.jpg" style="width:400px">
+ 		<img src="kazinga8.jpg" style="width:100%">
  	</div>
  	<div class="team3">
- 		<img src="elp.jpg" style="width:340px">
+ 		<img src="banana.jpg" style="width:100%">
  	</div>
  </div>
  
@@ -1085,7 +1113,7 @@
 
 
 
-<div style="opacity: 10px;background-image:url(farming.jpg);">
+<div style="opacity: 10px;#background-image:url(farming.jpg);">
 </div>
 
 <div style="margin-top: 0.5%;
@@ -1211,10 +1239,7 @@ width: 99%;">
     	 	
     	 	
     	 </div>
-    	<video controls src="nile.mp4"
-    	 autoplay 
-    	 width ="100%;" 
-    	 height ="auto"></video>
+    	<video class="tours" src="nile.mp4"></video>
     	 
     </div>
 </div>
