@@ -13,8 +13,10 @@
 		.local1{display: flex;z-index: -999;}
 
 		body{
-			background-color: grey;
-			width: 100%;
+			background-image: url(nilefalls.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			width: 100vw;
 			min-height: 100%;
 		}
 
@@ -41,7 +43,7 @@
         	display: block; }
 
         .company-name h1{
-        	color: blue;
+        	color: whitesmoke;
         	text-align: center;
         	font-size: 3rem;}
 
@@ -58,10 +60,10 @@
         	border-radius: 10px;
         	margin-top: 5%;}
         .team2{
-        	margin-top: 2%;
+        	margin-top: 35%;
         	margin-left: 0.2%;}
         .team3{
-        	margin-top: 2%;
+        	margin-top: 35%;
         	margin-left: 0.2%;}
 
         .tours{
@@ -628,9 +630,9 @@
          
        @media(max-width:600px){
       	body{
-      		width: 600px;
+      		width: 100%;
       		height: auto;
-      		background-image: url(presentation2.jpg);
+      		background-image: url(log5.jpg);
       		background-attachment:fixed;
       		background-repeat:no-repeat;
       		background-size: cover;}
@@ -638,20 +640,19 @@
 		.top{
 			background-color: purple;
 			width: 100%;
-			height: 30px;
-			margin-top: -17.5%; 
-			display: flex;
-			justify-content: space-between;
+			height: 40px;
+			margin-right: -1%;
 			border-top-right-radius: 5px;
 			border-top-left-radius: 5px;}
 
 		.top p{
 			color: white;
 			text-decoration: none;
-			font-size: 0.5rem;
+			font-size: 1.5rem;
 		}
 
         .company-name{
+        	margin-top:2%;
         	padding: 20px;
         	width: 100%;
         	display: block;
@@ -672,19 +673,20 @@
 
 
         .team{
-        	background-image: url(color3.jpg);
+
         	display:grid;
         	border: 2px solid yellow;
         	width:600px;
         	border-radius: 10px;
         	margin-top:1%;}
-        .team .team1 img{width: 100%;}
-        .team .team2 img{width:100%;}
-        .team .team3 img{width:100%}
+        .team .team1 img{width: 100%;border-radius:10px solid yellow;}
+        .team .team2 img{width:100%;margin-top: -35%;border-radius: 10px solid yellow;}
+        .team .team3 img{width:100%;margin-top: -35%;border-radius: 10px solid yellow;}
 
 
   
-		.navigation1{
+		.navigation1{display: none;
+			
 			margin-left: 1%;
 			margin-right: -1%;
 			border-radius: 10px;
@@ -699,9 +701,9 @@
 
 		.navigation1 ul li{
 			float: left;
-			margin-left: 3%;
+			#margin-left: 3%;
 			color: black;
-			margin-top: 2%;
+			margin-top: 1%;
 			list-style: none;
 			padding: 10px;
 			width: auto;
@@ -786,8 +788,8 @@
          	margin-left: 1%;
          	margin-right: -1%;
          	border-radius: 10px;
-         	display: flex; 
-         	width: 100%;
+         	display:flex; 
+         	width:145% ;
          	height: 200px;
          	margin-top:10px;
          	background-color: whitesmoke;
@@ -797,7 +799,7 @@
          	border-radius: 10px;
          	background-color: cyan;
          	height: 200px;
-         	width: 600px;
+         	width: auto;
          	margin-left:;
          	}
          .informer p{
@@ -807,7 +809,7 @@
 
          .informer2{
          	border-radius: 10px;
-         	width:600px;
+         	width:auto;
          	height:200px;
          	 border-left: 50px solid cyan;
          	 border-bottom:200px solid transparent;}
@@ -828,18 +830,16 @@
          .informer2-details p{
          	font-size: 0.3rem;
          	padding: 20px;
-         	text-align: left;margin-right: -1%}
+         	text-align: left;
+         	margin-right: -1%}
 	
-         .local1{
-         	width: 100%;
-         	height:inherit;
-         	margin-top:10px;}
-
+         .local1{display: none;}
          .hotels{
          	display: block;
          	align-items: center;}
 
-         .hotels .slider{width: 100%;}
+         .hotels .slider{width:600px;}
+         .hotels .slider .slide img{}
 
          .hotels .slider .slide .information{
          	width: auto;
@@ -852,7 +852,7 @@
          .hotels .slider .slide .information p{font-size: 0.5rem;} 
          .game{
          	display: block;
-         	width: 100%;}
+         	width: 145%;}
          .game .lineImages1{width: 100%;}
          .game .lineImages2{width: 100%;}
          .game .lineImages3{width: 100%;}
@@ -868,7 +868,7 @@
          .details{
          	margin-top:-20px;
          	height:50px;
-         	width:100%;}
+         	width:145%;}
          .details .details1Info{background-color: grey;}
 
          .details1{
@@ -909,12 +909,11 @@
        	text-align: center;
        	color: white;
  	    font-size:1.1rem;
- 	    #margin-left: 5%;
  	    padding: 5px;}
  	.tours{
  		src: nile.mp4;
     	 control:autoplay;
-    	 width:100%; 
+    	 width:145%; 
     	 height:auto;}
       
 	
@@ -1077,10 +1076,10 @@
  		<img src="clients1.jpg">
  	</div>
  	<div class="team2">
- 		<img src="kazinga8.jpg" style="width:100%">
+ 		<img src="kazinga8.jpg">
  	</div>
  	<div class="team3">
- 		<img src="banana.jpg" style="width:100%">
+ 		<img src="banana.jpg">
  	</div>
  </div>
  
@@ -1121,13 +1120,12 @@ margin-left: 1%;
 border-radius: 10px;
 display: flex;
 position:relative;
-width: 99%;">
+width: 100%;">
 
 	<div class="local1">
-	<img src="team.jpg" style="width:49%;
+	<img src="team.jpg" style="width:100%;
 	margin-left:1%;
 	margin-right: -1%;
-	#outline: 5px solid greenyellow;
 	border-top: 30px solid darkcyan;
 	border-radius: 10px;">
 
@@ -1286,7 +1284,7 @@ width: 99%;">
 
 			<div class="details2">
 				<div style="width:350px">
-				<img src="present4.jpeg" style="width:200px;margin-left: 25px;">
+				<img src="present4.jpg" style="width:200px;margin-left: 25px;">
 				<h2>mission statement</h2>
 				<p style="margin-left: 25px;padding: 10px;">
 					Our mission is to provide the best travel experience to our customers by offering them the highest  quality service, comfort, and convenience. We strive to exceed their expectations and make their journey as enjoyable as possible.thats why say "safest safaris, greatest experience.
@@ -1310,7 +1308,7 @@ width: 99%;">
 			<div class="details4">
 				<div style="width:300px">
 				<h2>company policy</h2>
-				<p style="padding: 10px;">The purpose of our existance is to provide services to our clients, and for the this to be implemented we have to have rules and regulations as regards our operations, we very much put emphasis on the nortion of "customer is our boss" and we serve them with atmost care, our policy regarding refunds states that once we have processed everything regarding your trip and you dont show up, we will not refund your money as it will be considered a cost expenditure, but we promise to serve you </p>
+				<p style="padding: 10px;">The purpose of our existance is to provide tour services to our clients, and for the this to be implemented we have to have rules and regulations as regards our operations, we very much put emphasis on the nortion of "customer is our boss" and we serve them with atmost care, our policy regarding refunds states that once we have processed everything regarding your trip and you dont show up, we will not refund your money as it will be considered a cost expenditure, but we promise to serve you </p>
 			</div>
 		</div>
 	</div>
